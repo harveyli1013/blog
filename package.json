@@ -1,0 +1,28 @@
+{
+  "name": "blog",
+  "version": "0.0.0",
+  "description": "personal blog project",
+  "main": "index.js",
+  "scripts": {
+    "gentree": "node index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harveyli1013/blog.git"
+  },
+  "keywords": [
+    "blog",
+    "frontend",
+    "backend"
+  ],
+  "author": "harveyli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harveyli1013/blog/issues"
+  },
+  "homepage": "https://github.com/harveyli1013/blog#readme",
+  "devDependencies": {
+    "@types/node": "^20.6.2",
+    "tree-node-cli": "^1.6.0"
+  }
+}

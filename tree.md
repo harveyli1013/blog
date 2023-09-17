@@ -1,7 +1,3 @@
-# Blog 项目
-
-## 项目结构
-```text=project_structure_start
 blog/
 ├── backend/
 │   ├── .gitignore
@@ -15,4 +11,3 @@ blog/
 ├── package.json
 ├── pnpm-lock.yaml
 └── tree.md
-```
