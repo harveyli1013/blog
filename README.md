@@ -14,5 +14,5 @@ blog/
 ├── index.ts
 ├── package.json
 ├── pnpm-lock.yaml
-└── tree.md
+└── update.sh
 ```

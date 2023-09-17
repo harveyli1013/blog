@@ -2,7 +2,7 @@
  * @Author: harvey —— fxli@yuansuan.cn
  * @Date: 2023-09-17 00:39:46
  * @LastEditors: harvey fxli@yuansuan.cn
- * @LastEditTime: 2023-09-17 14:19:59
+ * @LastEditTime: 2023-09-17 15:57:52
  * @Description:
  * Copyright (c) 2023 by harvey —— email: fxli@yuansuan.cn, All Rights Reserved.
  */
@@ -14,7 +14,7 @@ const PROJECT_STRUCTURE_START = "project_structure_start";
 
 const dirs = tree(".", {
   allFiles: true,
-  exclude: [/node_modules/, /^.git$/],
+  exclude: [/node_modules/, /^.git$/, /dist/, /build/],
   trailingSlash: true,
   maxDepth: 4,
   dirsFirst: true,
@@ -23,7 +23,6 @@ const dirs = tree(".", {
 
 try {
   const data = fs.readFileSync("./README.md", "utf8").split("\n");
-  console.log("data: ", data);
   const regex = /^##\s(.+)/;
   const index = data.findIndex(
     (str) =>
@@ -58,6 +57,9 @@ try {
   }
 
   fs.writeFileSync("./README.md", data.join("\n"));
+  console.log("******************************");
+  console.log("*    project tree updated    *");
+  console.log("******************************");
 } catch (err) {
   console.error(err);
 }
