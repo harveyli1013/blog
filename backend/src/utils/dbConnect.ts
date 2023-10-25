@@ -2,7 +2,7 @@
  * @Author: harvey —— fxli@yuansuan.cn
  * @Date: 2023-09-17 17:01:32
  * @LastEditors: harvey fxli@yuansuan.cn
- * @LastEditTime: 2023-09-17 19:05:38
+ * @LastEditTime: 2023-10-03 15:35:12
  * @Description:
  * Copyright (c) 2023 by harvey —— email: fxli@yuansuan.cn, All Rights Reserved.
  */
@@ -19,19 +19,19 @@ async function dbConnect() {
   const dbAuthSource = config.dbAuthSource
 
   try {
-    const connection = await mongoose.connect(dbUri, {
-      user: dbUser,
-      pass: dbPassword,
-      authSource: dbAuthSource,
-    })
-
-    console.log('connection: ', connection)
+    const connection = await mongoose.connect(
+      dbUri
+      //   {
+      //   user: dbUser,
+      //   pass: dbPassword,
+      //   authSource: dbAuthSource,
+      // }
+    )
 
     logger.info('DB connected')
 
     return connection
   } catch (error) {
-    console.log('error: ', error)
     logger.error('Could not connect to db')
     process.exit(1)
   }

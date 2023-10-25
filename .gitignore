@@ -32,3 +32,5 @@ typings/
 .idea
 
 .vscode
+.nuxt
+.output

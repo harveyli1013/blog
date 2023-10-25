@@ -1,3 +1,11 @@
+/*
+ * @Author: harvey —— fxli@yuansuan.cn
+ * @Date: 2023-09-17 16:31:32
+ * @LastEditors: harvey fxli@yuansuan.cn
+ * @LastEditTime: 2023-10-03 15:40:47
+ * @Description:
+ * Copyright (c) 2023 by harvey —— email: fxli@yuansuan.cn, All Rights Reserved.
+ */
 // src/routes/index.ts
 
 import { Express, Request, Response, Router } from 'express'

@@ -17,7 +17,7 @@ const PORT = config.port
 
 const app = express()
 
-app.use(express.json())
+initMiddleware(app)
 
 // 启动
 app.listen(PORT, async () => {
@@ -25,4 +25,3 @@ app.listen(PORT, async () => {
   await dbConnect()
   routes(app)
 })
-initMiddleware(app)
